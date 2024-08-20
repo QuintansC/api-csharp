@@ -19,8 +19,8 @@ namespace api_csharp.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "Teste")]
-        public IEnumerable<Teste> Get()
+        [HttpPost(Name = "Teste")]
+        public IEnumerable<Teste> Post()
         {
             return Enumerable.Range(1, 5).Select(index => new Teste
             {
